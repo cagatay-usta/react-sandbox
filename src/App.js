@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { Component } from "react";
 import TestComponent from "./testComponent";
-
+import Counter from "./counter.js";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -10,13 +10,14 @@ class App extends Component {
   }
 
   onClickBtn() {
-    console.log("Button has been clicked")
+    console.log("Button has been clicked");
   }
 
   render() {
     return (
       <div>
-        <TestComponent title="React" onButtonClicked={this.onClickBtn}/>
+        <TestComponent title="React" onButtonClicked={this.onClickBtn} />
+        <Counter />
       </div>
     );
   }
