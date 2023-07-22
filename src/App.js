@@ -4,6 +4,8 @@ import TestComponent from "./testComponent";
 import Counter from "./counter.js";
 import Overview from "./overview";
 import uniqid from "uniqid";
+import { Link } from "react-router-dom";
+
 
 class App extends Component {
   constructor(props) {
@@ -54,6 +56,14 @@ class App extends Component {
           <button type="submit">Add Task</button>
         </form>
         <Overview tasks={tasks} />
+        <p>links to other pages</p>
+        <nav>
+          <ul>
+            <li>
+              <Link to="profile">Profile page</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     );
   }
