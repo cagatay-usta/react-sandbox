@@ -6,7 +6,6 @@ import Overview from "./overview";
 import uniqid from "uniqid";
 import { Link } from "react-router-dom";
 
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -61,6 +60,9 @@ class App extends Component {
           <ul>
             <li>
               <Link to="profile">Profile page</Link>
+            </li>
+            <li>
+              <Link to="image">Fetched Image</Link>
             </li>
           </ul>
         </nav>

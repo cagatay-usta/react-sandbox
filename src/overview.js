@@ -1,9 +1,6 @@
 import React from "react";
 
 const Overview = (props) => {
-  const deleteTask = (e) => {
-    console.log(e.target.value);
-  };
   const { tasks } = props;
   return (
     <ul>
