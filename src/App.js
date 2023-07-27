@@ -64,6 +64,9 @@ class App extends Component {
             <li>
               <Link to="image">Fetched Image</Link>
             </li>
+            <li>
+              <Link to="store">Store</Link>
+            </li>
           </ul>
         </nav>
       </div>

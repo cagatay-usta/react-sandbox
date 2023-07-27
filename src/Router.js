@@ -3,6 +3,7 @@ import App from "./App";
 import Profile from "./Profile";
 import ErrorPage from "./ErrorPage";
 import Image from "./FetchImage";
+import FakeStore from "./FakeStore";
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const Router = () => {
     {
       path: "image",
       element: <Image />
+    },
+    {
+      path: "store",
+      element: <FakeStore />
     }
   ]);
 
